@@ -1,36 +1,34 @@
 body {
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: white;
     margin: 0;
-    font-family: sans-serif;
 }
 
 .navbar {
-    background-color: #fff;
+    background-color: white;
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .search-box {
     display: flex;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 #user-input {
     width: 400px;
     padding: 12px;
-    border: 1px solid #ff7f50;
+    border: 1px solid rgb(231, 97, 2);
     border-radius: 5px 0 0 5px;
     outline: none;
 }
 
 button {
-    background: #ff6347;
+    background: rgb(195, 143, 47);
     color: white;
-    border: none;
-    padding: 0 25px;
-    border-radius: 0 5px 5px 0;
+    border: rgb(0, 0, 0);
+    padding:25px;
     cursor: pointer;
 }
 
@@ -40,31 +38,25 @@ button {
 
 .meal-wrapper {
     display: grid;
-    gap: 30px;
+    gap: 5px;
 }
 
 .meal-card {
     background: white;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow:10px rgba(58, 17, 17, 0.1);
     border-radius: 15px;
     text-align: center;
     cursor: pointer;
     overflow: hidden;
     transition: 0.3s;
 }
-
-.meal-card:hover {
-    transform: translateY(-5px);
-}
-
 .meal-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+    width: 25%;
+    height: 250px;
 }
 
 .meal-card h3 {
-    color: #ff6347;
+    color: rgb(255, 43, 1);
     padding: 15px;
 }
 
@@ -99,5 +91,5 @@ button {
 
 .error-msg {
     color: red;
-    grid-column: 1 / -1;
+    align-items: left;
 }
