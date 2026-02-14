@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodhub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <h1>Foodhub</h1>
+        <div class="search-box">
+            <input type="text" id="user-input" placeholder="find your favorite food">
+            <button onclick="handleSearch()">Search</button>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div id="meal-container" class="meal-wrapper"></div>
+    </main>
+
+    <div id="info-container" class="info">
+        <div class="info-content" id="info-details"></div>
+    </div>
+
+    <script src="project.js"></script>
+</body>
+
+</html>

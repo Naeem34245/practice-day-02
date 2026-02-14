@@ -1,0 +1,103 @@
+body {
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.navbar {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#user-input {
+    width: 400px;
+    padding: 12px;
+    border: 1px solid #ff7f50;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+button {
+    background: #ff6347;
+    color: white;
+    border: none;
+    padding: 0 25px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.main-container {
+    padding: 40px 20px;
+}
+
+.meal-wrapper {
+    display: grid;
+    gap: 30px;
+}
+
+.meal-card {
+    background: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.meal-card:hover {
+    transform: translateY(-5px);
+}
+
+.meal-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.meal-card h3 {
+    color: #ff6347;
+    padding: 15px;
+}
+
+.info {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+}
+
+.info-content {
+    background: white;
+    width: 450px;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 15px;
+    position: relative;
+    text-align: left;
+}
+
+.close-btn {
+    color: red;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.error-msg {
+    color: red;
+    grid-column: 1 / -1;
+}
